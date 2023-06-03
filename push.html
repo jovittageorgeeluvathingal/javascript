@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   </head>
+<body>
+     
+    <h1>  using JS function  push / pop / delete </h1>
+    <button onclick="Myfunction()">  push </button> <br><br>
+    <button onclick=" Myfunction1()"> pop</button><br><br>
+    <button onclick="Myfunction2()"> delete</button><br><br>
+
+
+    <p id="demo"></p>
+    <script>
+        const fruits =[ "banana", " orange"," apple","grape"];
+        document.getElementById("demo").innerHTML =fruits;
+
+        function  Myfunction()
+        {
+            fruits.push("lemon");
+            document.getElementById("demo").innerHTML =fruits
+        }
+        function  Myfunction1()
+        {
+            fruits.pop();
+            document.getElementById("demo").innerHTML =fruits
+        }
+        function  Myfunction2()
+        {
+           delete fruits[2];
+            document.getElementById("demo").innerHTML =fruits
+        }
+    </script>
+
+</body>
+</html>
